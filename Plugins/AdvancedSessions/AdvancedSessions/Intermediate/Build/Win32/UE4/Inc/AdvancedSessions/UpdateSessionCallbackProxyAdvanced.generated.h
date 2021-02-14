@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -19,42 +19,12 @@ class UUpdateSessionCallbackProxyAdvanced;
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_UpdateSessionCallbackProxyAdvanced_h_12_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_UpdateSessionCallbackProxyAdvanced_h_12_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execUpdateSession) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_TARRAY_REF(FSessionPropertyKeyPair,Z_Param_Out_ExtraSettings); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_PublicConnections); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_PrivateConnections); \
-		P_GET_UBOOL(Z_Param_bUseLAN); \
-		P_GET_UBOOL(Z_Param_bAllowInvites); \
-		P_GET_UBOOL(Z_Param_bAllowJoinInProgress); \
-		P_GET_UBOOL(Z_Param_bRefreshOnlineData); \
-		P_GET_UBOOL(Z_Param_bIsDedicatedServer); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UUpdateSessionCallbackProxyAdvanced**)Z_Param__Result=UUpdateSessionCallbackProxyAdvanced::UpdateSession(Z_Param_WorldContextObject,Z_Param_Out_ExtraSettings,Z_Param_PublicConnections,Z_Param_PrivateConnections,Z_Param_bUseLAN,Z_Param_bAllowInvites,Z_Param_bAllowJoinInProgress,Z_Param_bRefreshOnlineData,Z_Param_bIsDedicatedServer); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execUpdateSession);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_UpdateSessionCallbackProxyAdvanced_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execUpdateSession) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_TARRAY_REF(FSessionPropertyKeyPair,Z_Param_Out_ExtraSettings); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_PublicConnections); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_PrivateConnections); \
-		P_GET_UBOOL(Z_Param_bUseLAN); \
-		P_GET_UBOOL(Z_Param_bAllowInvites); \
-		P_GET_UBOOL(Z_Param_bAllowJoinInProgress); \
-		P_GET_UBOOL(Z_Param_bRefreshOnlineData); \
-		P_GET_UBOOL(Z_Param_bIsDedicatedServer); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UUpdateSessionCallbackProxyAdvanced**)Z_Param__Result=UUpdateSessionCallbackProxyAdvanced::UpdateSession(Z_Param_WorldContextObject,Z_Param_Out_ExtraSettings,Z_Param_PublicConnections,Z_Param_PrivateConnections,Z_Param_bUseLAN,Z_Param_bAllowInvites,Z_Param_bAllowJoinInProgress,Z_Param_bRefreshOnlineData,Z_Param_bIsDedicatedServer); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execUpdateSession);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_UpdateSessionCallbackProxyAdvanced_h_12_INCLASS_NO_PURE_DECLS \

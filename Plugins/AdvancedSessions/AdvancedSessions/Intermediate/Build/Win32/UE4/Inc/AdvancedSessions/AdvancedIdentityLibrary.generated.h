@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -21,266 +21,34 @@ enum class EBPLoginStatus : uint8;
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetUserAccountAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AttributeValue); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_Out_AttributeValue,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountDisplayName) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DisplayName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountDisplayName(Z_Param_Out_AccountInfo,Z_Param_Out_DisplayName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountRealName) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_UserName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountRealName(Z_Param_Out_AccountInfo,Z_Param_Out_UserName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserID) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserID(Z_Param_Out_AccountInfo,Z_Param_Out_UniqueNetID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetUserAccountAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_NewAttributeValue); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::SetUserAccountAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_NewAttributeValue,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountAuthAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AuthAttribute); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAuthAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_Out_AuthAttribute,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountAccessToken) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AccessToken); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAccessToken(Z_Param_Out_AccountInfo,Z_Param_Out_AccessToken); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllUserAccounts) \
-	{ \
-		P_GET_TARRAY_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfos); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetAllUserAccounts(Z_Param_Out_AccountInfos,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccount) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetId); \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccount(Z_Param_Out_UniqueNetId,Z_Param_Out_AccountInfo,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPlayerNickname) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_PlayerNickname); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetPlayerNickname(Z_Param_Out_UniqueNetID,Z_Param_Out_PlayerNickname); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPlayerAuthToken) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AuthToken); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetPlayerAuthToken(Z_Param_PlayerController,Z_Param_Out_AuthToken,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetLoginStatus) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_GET_ENUM_REF(EBPLoginStatus,Z_Param_Out_LoginStatus); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetLoginStatus(Z_Param_Out_UniqueNetID,(EBPLoginStatus&)(Z_Param_Out_LoginStatus),(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetUserAccountAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountDisplayName); \
+	DECLARE_FUNCTION(execGetUserAccountRealName); \
+	DECLARE_FUNCTION(execGetUserID); \
+	DECLARE_FUNCTION(execSetUserAccountAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountAuthAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountAccessToken); \
+	DECLARE_FUNCTION(execGetAllUserAccounts); \
+	DECLARE_FUNCTION(execGetUserAccount); \
+	DECLARE_FUNCTION(execGetPlayerNickname); \
+	DECLARE_FUNCTION(execGetPlayerAuthToken); \
+	DECLARE_FUNCTION(execGetLoginStatus);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetUserAccountAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AttributeValue); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_Out_AttributeValue,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountDisplayName) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_DisplayName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountDisplayName(Z_Param_Out_AccountInfo,Z_Param_Out_DisplayName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountRealName) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_UserName); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountRealName(Z_Param_Out_AccountInfo,Z_Param_Out_UserName); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserID) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserID(Z_Param_Out_AccountInfo,Z_Param_Out_UniqueNetID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execSetUserAccountAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_NewAttributeValue); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::SetUserAccountAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_NewAttributeValue,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountAuthAttribute) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_AttributeName); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AuthAttribute); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAuthAttribute(Z_Param_Out_AccountInfo,Z_Param_AttributeName,Z_Param_Out_AuthAttribute,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccountAccessToken) \
-	{ \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AccessToken); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccountAccessToken(Z_Param_Out_AccountInfo,Z_Param_Out_AccessToken); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetAllUserAccounts) \
-	{ \
-		P_GET_TARRAY_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfos); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetAllUserAccounts(Z_Param_Out_AccountInfos,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetUserAccount) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetId); \
-		P_GET_STRUCT_REF(FBPUserOnlineAccount,Z_Param_Out_AccountInfo); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetUserAccount(Z_Param_Out_UniqueNetId,Z_Param_Out_AccountInfo,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPlayerNickname) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_PlayerNickname); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetPlayerNickname(Z_Param_Out_UniqueNetID,Z_Param_Out_PlayerNickname); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetPlayerAuthToken) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY_REF(UStrProperty,Z_Param_Out_AuthToken); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetPlayerAuthToken(Z_Param_PlayerController,Z_Param_Out_AuthToken,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetLoginStatus) \
-	{ \
-		P_GET_STRUCT_REF(FBPUniqueNetId,Z_Param_Out_UniqueNetID); \
-		P_GET_ENUM_REF(EBPLoginStatus,Z_Param_Out_LoginStatus); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedIdentityLibrary::GetLoginStatus(Z_Param_Out_UniqueNetID,(EBPLoginStatus&)(Z_Param_Out_LoginStatus),(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetUserAccountAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountDisplayName); \
+	DECLARE_FUNCTION(execGetUserAccountRealName); \
+	DECLARE_FUNCTION(execGetUserID); \
+	DECLARE_FUNCTION(execSetUserAccountAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountAuthAttribute); \
+	DECLARE_FUNCTION(execGetUserAccountAccessToken); \
+	DECLARE_FUNCTION(execGetAllUserAccounts); \
+	DECLARE_FUNCTION(execGetUserAccount); \
+	DECLARE_FUNCTION(execGetPlayerNickname); \
+	DECLARE_FUNCTION(execGetPlayerAuthToken); \
+	DECLARE_FUNCTION(execGetLoginStatus);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_INCLASS_NO_PURE_DECLS \

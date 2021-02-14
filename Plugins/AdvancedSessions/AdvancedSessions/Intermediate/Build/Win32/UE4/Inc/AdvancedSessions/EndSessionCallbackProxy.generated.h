@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -19,28 +19,12 @@ class UEndSessionCallbackProxy;
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_EndSessionCallbackProxy_h_12_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_EndSessionCallbackProxy_h_12_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execEndSession) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UEndSessionCallbackProxy**)Z_Param__Result=UEndSessionCallbackProxy::EndSession(Z_Param_WorldContextObject,Z_Param_PlayerController); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execEndSession);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_EndSessionCallbackProxy_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execEndSession) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UEndSessionCallbackProxy**)Z_Param__Result=UEndSessionCallbackProxy::EndSession(Z_Param_WorldContextObject,Z_Param_PlayerController); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execEndSession);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_EndSessionCallbackProxy_h_12_INCLASS_NO_PURE_DECLS \

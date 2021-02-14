@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -22,66 +22,14 @@ class UFindSessionsCallbackProxyAdvanced;
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_13_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_13_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execFilterSessionResults) \
-	{ \
-		P_GET_TARRAY_REF(FBlueprintSessionResult,Z_Param_Out_SessionResults); \
-		P_GET_TARRAY_REF(FSessionsSearchSetting,Z_Param_Out_Filters); \
-		P_GET_TARRAY_REF(FBlueprintSessionResult,Z_Param_Out_FilteredResults); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UFindSessionsCallbackProxyAdvanced::FilterSessionResults(Z_Param_Out_SessionResults,Z_Param_Out_Filters,Z_Param_Out_FilteredResults); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFindSessionsAdvanced) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_MaxResults); \
-		P_GET_UBOOL(Z_Param_bUseLAN); \
-		P_GET_ENUM(EBPServerPresenceSearchType,Z_Param_ServerTypeToSearch); \
-		P_GET_TARRAY_REF(FSessionsSearchSetting,Z_Param_Out_Filters); \
-		P_GET_UBOOL(Z_Param_bEmptyServersOnly); \
-		P_GET_UBOOL(Z_Param_bNonEmptyServersOnly); \
-		P_GET_UBOOL(Z_Param_bSecureServersOnly); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_MinSlotsAvailable); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UFindSessionsCallbackProxyAdvanced**)Z_Param__Result=UFindSessionsCallbackProxyAdvanced::FindSessionsAdvanced(Z_Param_WorldContextObject,Z_Param_PlayerController,Z_Param_MaxResults,Z_Param_bUseLAN,EBPServerPresenceSearchType(Z_Param_ServerTypeToSearch),Z_Param_Out_Filters,Z_Param_bEmptyServersOnly,Z_Param_bNonEmptyServersOnly,Z_Param_bSecureServersOnly,Z_Param_MinSlotsAvailable); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execFilterSessionResults); \
+	DECLARE_FUNCTION(execFindSessionsAdvanced);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execFilterSessionResults) \
-	{ \
-		P_GET_TARRAY_REF(FBlueprintSessionResult,Z_Param_Out_SessionResults); \
-		P_GET_TARRAY_REF(FSessionsSearchSetting,Z_Param_Out_Filters); \
-		P_GET_TARRAY_REF(FBlueprintSessionResult,Z_Param_Out_FilteredResults); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UFindSessionsCallbackProxyAdvanced::FilterSessionResults(Z_Param_Out_SessionResults,Z_Param_Out_Filters,Z_Param_Out_FilteredResults); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execFindSessionsAdvanced) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_MaxResults); \
-		P_GET_UBOOL(Z_Param_bUseLAN); \
-		P_GET_ENUM(EBPServerPresenceSearchType,Z_Param_ServerTypeToSearch); \
-		P_GET_TARRAY_REF(FSessionsSearchSetting,Z_Param_Out_Filters); \
-		P_GET_UBOOL(Z_Param_bEmptyServersOnly); \
-		P_GET_UBOOL(Z_Param_bNonEmptyServersOnly); \
-		P_GET_UBOOL(Z_Param_bSecureServersOnly); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_MinSlotsAvailable); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UFindSessionsCallbackProxyAdvanced**)Z_Param__Result=UFindSessionsCallbackProxyAdvanced::FindSessionsAdvanced(Z_Param_WorldContextObject,Z_Param_PlayerController,Z_Param_MaxResults,Z_Param_bUseLAN,EBPServerPresenceSearchType(Z_Param_ServerTypeToSearch),Z_Param_Out_Filters,Z_Param_bEmptyServersOnly,Z_Param_bNonEmptyServersOnly,Z_Param_bSecureServersOnly,Z_Param_MinSlotsAvailable); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execFilterSessionResults); \
+	DECLARE_FUNCTION(execFindSessionsAdvanced);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_13_INCLASS_NO_PURE_DECLS \

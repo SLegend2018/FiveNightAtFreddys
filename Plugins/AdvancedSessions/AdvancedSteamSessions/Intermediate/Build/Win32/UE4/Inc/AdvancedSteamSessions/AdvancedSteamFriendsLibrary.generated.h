@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -30,180 +30,28 @@ template<> ADVANCEDSTEAMSESSIONS_API UScriptStruct* StaticStruct<struct FBPSteam
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_311_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_311_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetSteamGroups) \
-	{ \
-		P_GET_TARRAY_REF(FBPSteamGroupInfo,Z_Param_Out_SteamGroups); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamFriendsLibrary::GetSteamGroups(Z_Param_Out_SteamGroups); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamFriendGamePlayed) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_AppID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamFriendsLibrary::GetSteamFriendGamePlayed(Z_Param_UniqueNetId,(EBlueprintResultSwitch&)(Z_Param_Out_Result),Z_Param_Out_AppID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetLocalSteamIDFromSteam) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FBPUniqueNetId*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetLocalSteamIDFromSteam(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCreateSteamIDFromString) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_SteamID64); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FBPUniqueNetId*)Z_Param__Result=UAdvancedSteamFriendsLibrary::CreateSteamIDFromString(Z_Param_SteamID64); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamPersonaName) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetSteamPersonaName(Z_Param_UniqueNetId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFriendSteamLevel) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetFriendSteamLevel(Z_Param_UniqueNetId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOpenSteamUserOverlay) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM(ESteamUserOverlayType,Z_Param_DialogType); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAdvancedSteamFriendsLibrary::OpenSteamUserOverlay(Z_Param_UniqueNetId,ESteamUserOverlayType(Z_Param_DialogType)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRequestSteamFriendInfo) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_UBOOL(Z_Param_bRequireNameOnly); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAdvancedSteamFriendsLibrary::RequestSteamFriendInfo(Z_Param_UniqueNetId,Z_Param_bRequireNameOnly); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamFriendAvatar) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM_REF(EBlueprintAsyncResultSwitch,Z_Param_Out_Result); \
-		P_GET_ENUM(SteamAvatarSize,Z_Param_AvatarSize); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UTexture2D**)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetSteamFriendAvatar(Z_Param_UniqueNetId,(EBlueprintAsyncResultSwitch&)(Z_Param_Out_Result),SteamAvatarSize(Z_Param_AvatarSize)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetSteamGroups); \
+	DECLARE_FUNCTION(execGetSteamFriendGamePlayed); \
+	DECLARE_FUNCTION(execGetLocalSteamIDFromSteam); \
+	DECLARE_FUNCTION(execCreateSteamIDFromString); \
+	DECLARE_FUNCTION(execGetSteamPersonaName); \
+	DECLARE_FUNCTION(execGetFriendSteamLevel); \
+	DECLARE_FUNCTION(execOpenSteamUserOverlay); \
+	DECLARE_FUNCTION(execRequestSteamFriendInfo); \
+	DECLARE_FUNCTION(execGetSteamFriendAvatar);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_311_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetSteamGroups) \
-	{ \
-		P_GET_TARRAY_REF(FBPSteamGroupInfo,Z_Param_Out_SteamGroups); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamFriendsLibrary::GetSteamGroups(Z_Param_Out_SteamGroups); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamFriendGamePlayed) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_AppID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamFriendsLibrary::GetSteamFriendGamePlayed(Z_Param_UniqueNetId,(EBlueprintResultSwitch&)(Z_Param_Out_Result),Z_Param_Out_AppID); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetLocalSteamIDFromSteam) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FBPUniqueNetId*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetLocalSteamIDFromSteam(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCreateSteamIDFromString) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_SteamID64); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FBPUniqueNetId*)Z_Param__Result=UAdvancedSteamFriendsLibrary::CreateSteamIDFromString(Z_Param_SteamID64); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamPersonaName) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(FString*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetSteamPersonaName(Z_Param_UniqueNetId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetFriendSteamLevel) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(int32*)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetFriendSteamLevel(Z_Param_UniqueNetId); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execOpenSteamUserOverlay) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM(ESteamUserOverlayType,Z_Param_DialogType); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAdvancedSteamFriendsLibrary::OpenSteamUserOverlay(Z_Param_UniqueNetId,ESteamUserOverlayType(Z_Param_DialogType)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execRequestSteamFriendInfo) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_UBOOL(Z_Param_bRequireNameOnly); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(bool*)Z_Param__Result=UAdvancedSteamFriendsLibrary::RequestSteamFriendInfo(Z_Param_UniqueNetId,Z_Param_bRequireNameOnly); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSteamFriendAvatar) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_UniqueNetId); \
-		P_GET_ENUM_REF(EBlueprintAsyncResultSwitch,Z_Param_Out_Result); \
-		P_GET_ENUM(SteamAvatarSize,Z_Param_AvatarSize); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(UTexture2D**)Z_Param__Result=UAdvancedSteamFriendsLibrary::GetSteamFriendAvatar(Z_Param_UniqueNetId,(EBlueprintAsyncResultSwitch&)(Z_Param_Out_Result),SteamAvatarSize(Z_Param_AvatarSize)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetSteamGroups); \
+	DECLARE_FUNCTION(execGetSteamFriendGamePlayed); \
+	DECLARE_FUNCTION(execGetLocalSteamIDFromSteam); \
+	DECLARE_FUNCTION(execCreateSteamIDFromString); \
+	DECLARE_FUNCTION(execGetSteamPersonaName); \
+	DECLARE_FUNCTION(execGetFriendSteamLevel); \
+	DECLARE_FUNCTION(execOpenSteamUserOverlay); \
+	DECLARE_FUNCTION(execRequestSteamFriendInfo); \
+	DECLARE_FUNCTION(execGetSteamFriendAvatar);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_311_INCLASS_NO_PURE_DECLS \

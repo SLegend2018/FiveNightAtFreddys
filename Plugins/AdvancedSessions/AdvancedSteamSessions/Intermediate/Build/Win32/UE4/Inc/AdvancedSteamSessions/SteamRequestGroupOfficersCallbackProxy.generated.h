@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -40,28 +40,12 @@ static inline void FBlueprintGroupOfficerDetailsDelegate_DelegateWrapper(const F
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h_68_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h_68_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetSteamGroupOfficerList) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_GroupUniqueNetID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(USteamRequestGroupOfficersCallbackProxy**)Z_Param__Result=USteamRequestGroupOfficersCallbackProxy::GetSteamGroupOfficerList(Z_Param_WorldContextObject,Z_Param_GroupUniqueNetID); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetSteamGroupOfficerList);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h_68_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetSteamGroupOfficerList) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_GroupUniqueNetID); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(USteamRequestGroupOfficersCallbackProxy**)Z_Param__Result=USteamRequestGroupOfficersCallbackProxy::GetSteamGroupOfficerList(Z_Param_WorldContextObject,Z_Param_GroupUniqueNetID); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetSteamGroupOfficerList);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h_68_INCLASS_NO_PURE_DECLS \

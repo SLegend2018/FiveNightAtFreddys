@@ -3,7 +3,7 @@
 	
 	Plugin created by Rama
 */
-#include "GamepadUMGPlugin/Public/VirtualCursorFunctionLibrary.h"
+#include "VirtualCursorFunctionLibrary.h"
 #include "GamepadUMGPluginPrivatePCH.h"
 #include "GamepadCursorSettings.h"
 #include "GameAnalogCursor.h"

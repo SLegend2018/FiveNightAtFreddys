@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -12,6 +12,7 @@
 #include "AdvancedSessions/Classes/AdvancedFriendsInterface.h"
 #include "AdvancedSessions/Classes/AdvancedFriendsGameInstance.h"
 #include "AdvancedSessions/Classes/AdvancedFriendsLibrary.h"
+#include "AdvancedSessions/Classes/AdvancedGameSession.h"
 #include "AdvancedSessions/Classes/AdvancedIdentityLibrary.h"
 #include "AdvancedSessions/Classes/AdvancedSessionsLibrary.h"
 #include "AdvancedSessions/Classes/AdvancedVoiceLibrary.h"

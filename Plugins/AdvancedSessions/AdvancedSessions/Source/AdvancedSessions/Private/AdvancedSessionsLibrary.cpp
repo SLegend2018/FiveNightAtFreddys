@@ -6,6 +6,43 @@
 //General Log
 DEFINE_LOG_CATEGORY(AdvancedSessionsLog);
 
+
+bool UAdvancedSessionsLibrary::KickPlayer(UObject* WorldContextObject, APlayerController* PlayerToKick, FText KickReason)
+{
+	UWorld* const World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
+
+	if (World)
+	{
+		if (AGameModeBase* GameMode = World->GetAuthGameMode())
+		{
+			if (GameMode->GameSession)
+			{
+				return GameMode->GameSession->KickPlayer(PlayerToKick, KickReason);
+			}
+		}
+	}
+
+	return false;
+}
+
+bool UAdvancedSessionsLibrary::BanPlayer(UObject* WorldContextObject, APlayerController* PlayerToBan, FText BanReason)
+{
+	UWorld* const World = GEngine->GetWorldFromContextObject(WorldContextObject, EGetWorldErrorMode::LogAndReturnNull);
+
+	if (World)
+	{
+		if (AGameModeBase* GameMode = World->GetAuthGameMode())
+		{
+			if (GameMode->GameSession)
+			{
+				return GameMode->GameSession->BanPlayer(PlayerToBan, BanReason);
+			}
+		}
+	}
+
+	return false;
+}
+
 bool UAdvancedSessionsLibrary::IsValidSession(const FBlueprintSessionResult & SessionResult)
 {
 	return SessionResult.OnlineResult.IsValid();
@@ -405,7 +442,7 @@ void UAdvancedSessionsLibrary::GetUniqueNetID(APlayerController *PlayerControlle
 
 	if (APlayerState* PlayerState = (PlayerController != NULL) ? PlayerController->PlayerState : NULL)
 	{
-		UniqueNetId.SetUniqueNetId(PlayerState->UniqueId.GetUniqueNetId());
+		UniqueNetId.SetUniqueNetId(PlayerState->GetUniqueId().GetUniqueNetId());
 		if (!UniqueNetId.IsValid())
 		{
 			UE_LOG(AdvancedSessionsLog, Warning, TEXT("GetUniqueNetIdFromController couldn't get the player uniquenetid!"));
@@ -422,7 +459,7 @@ void UAdvancedSessionsLibrary::GetUniqueNetIDFromPlayerState(APlayerState *Playe
 		return;
 	}
 
-	UniqueNetId.SetUniqueNetId(PlayerState->UniqueId.GetUniqueNetId());
+	UniqueNetId.SetUniqueNetId(PlayerState->GetUniqueId().GetUniqueNetId());
 	if (!UniqueNetId.IsValid())
 	{
 		UE_LOG(AdvancedSessionsLog, Warning, TEXT("GetUniqueNetIdFromPlayerState couldn't get the player uniquenetid!"));

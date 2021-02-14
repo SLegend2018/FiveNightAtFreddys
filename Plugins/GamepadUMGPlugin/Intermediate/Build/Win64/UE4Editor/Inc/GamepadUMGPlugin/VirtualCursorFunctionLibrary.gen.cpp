@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -17,11 +17,31 @@ void EmptyLinkFunctionForGeneratedCodeVirtualCursorFunctionLibrary() {}
 	GAMEPADUMGPLUGIN_API UClass* Z_Construct_UClass_UVirtualCursorFunctionLibrary();
 	ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 	UPackage* Z_Construct_UPackage__Script_GamepadUMGPlugin();
-	GAMEPADUMGPLUGIN_API UFunction* Z_Construct_UFunction_UVirtualCursorFunctionLibrary_DisableVirtualCursor();
 	ENGINE_API UClass* Z_Construct_UClass_APlayerController_NoRegister();
-	GAMEPADUMGPLUGIN_API UFunction* Z_Construct_UFunction_UVirtualCursorFunctionLibrary_EnableVirtualCursor();
-	GAMEPADUMGPLUGIN_API UFunction* Z_Construct_UFunction_UVirtualCursorFunctionLibrary_IsCursorOverInteractableWidget();
 // End Cross Module References
+	DEFINE_FUNCTION(UVirtualCursorFunctionLibrary::execIsCursorOverInteractableWidget)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(bool*)Z_Param__Result=UVirtualCursorFunctionLibrary::IsCursorOverInteractableWidget();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVirtualCursorFunctionLibrary::execDisableVirtualCursor)
+	{
+		P_GET_OBJECT(APlayerController,Z_Param_PC);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UVirtualCursorFunctionLibrary::DisableVirtualCursor(Z_Param_PC);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(UVirtualCursorFunctionLibrary::execEnableVirtualCursor)
+	{
+		P_GET_OBJECT(APlayerController,Z_Param_PC);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		UVirtualCursorFunctionLibrary::EnableVirtualCursor(Z_Param_PC);
+		P_NATIVE_END;
+	}
 	void UVirtualCursorFunctionLibrary::StaticRegisterNativesUVirtualCursorFunctionLibrary()
 	{
 		UClass* Class = UVirtualCursorFunctionLibrary::StaticClass();

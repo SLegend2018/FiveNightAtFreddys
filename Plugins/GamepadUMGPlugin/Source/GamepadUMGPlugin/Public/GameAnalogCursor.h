@@ -4,7 +4,16 @@
 	Plugin created by Rama
 */
 #pragma once
+#if USING_CODE_ANALYSIS
+MSVC_PRAGMA(warning(push))
+MSVC_PRAGMA(warning(disable : ALL_CODE_ANALYSIS_WARNINGS))
+#endif // USING_CODE_ANALYSIS
+#pragma warning(push)
+#pragma warning(disable:4996)
 
+#include "CoreMinimal.h"
+#include "GenericPlatform/ICursor.h"
+#include "Framework/Application/IInputProcessor.h"
 #include "Framework/Application/AnalogCursor.h"
 
 class FGameAnalogCursor : public FAnalogCursor

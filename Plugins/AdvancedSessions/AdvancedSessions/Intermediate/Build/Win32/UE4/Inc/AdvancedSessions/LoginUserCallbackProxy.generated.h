@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -19,32 +19,12 @@ class ULoginUserCallbackProxy;
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_LoginUserCallbackProxy_h_13_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_LoginUserCallbackProxy_h_13_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execLoginUser) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_UserID); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_UserToken); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(ULoginUserCallbackProxy**)Z_Param__Result=ULoginUserCallbackProxy::LoginUser(Z_Param_WorldContextObject,Z_Param_PlayerController,Z_Param_UserID,Z_Param_UserToken); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execLoginUser);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_LoginUserCallbackProxy_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execLoginUser) \
-	{ \
-		P_GET_OBJECT(UObject,Z_Param_WorldContextObject); \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_UserID); \
-		P_GET_PROPERTY(UStrProperty,Z_Param_UserToken); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(ULoginUserCallbackProxy**)Z_Param__Result=ULoginUserCallbackProxy::LoginUser(Z_Param_WorldContextObject,Z_Param_PlayerController,Z_Param_UserID,Z_Param_UserToken); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execLoginUser);
 
 
 #define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_LoginUserCallbackProxy_h_13_INCLASS_NO_PURE_DECLS \

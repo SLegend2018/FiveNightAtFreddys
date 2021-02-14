@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -16,168 +16,30 @@ class APlayerController;
 #endif
 #define ADVANCEDSESSIONS_AdvancedExternalUILibrary_generated_h
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execShowAccountUpgradeUI) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerRequestingAccountUpgradeUI); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowAccountUpgradeUI(Z_Param_PlayerRequestingAccountUpgradeUI,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowProfileUI) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerViewingProfile); \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerToViewProfileOf); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowProfileUI(Z_Param_PlayerViewingProfile,Z_Param_PlayerToViewProfileOf,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCloseWebURLUI) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::CloseWebURLUI(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowWebURLUI) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_URLToShow); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_GET_TARRAY_REF(FString,Z_Param_Out_AllowedDomains); \
-		P_GET_UBOOL(Z_Param_bEmbedded); \
-		P_GET_UBOOL(Z_Param_bShowBackground); \
-		P_GET_UBOOL(Z_Param_bShowCloseButton); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OffsetX); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OffsetY); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_SizeX); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_SizeY); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowWebURLUI(Z_Param_URLToShow,(EBlueprintResultSwitch&)(Z_Param_Out_Result),Z_Param_Out_AllowedDomains,Z_Param_bEmbedded,Z_Param_bShowBackground,Z_Param_bShowCloseButton,Z_Param_OffsetX,Z_Param_OffsetY,Z_Param_SizeX,Z_Param_SizeY); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowLeaderBoardUI) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_LeaderboardName); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowLeaderBoardUI(Z_Param_LeaderboardName,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowInviteUI) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowInviteUI(Z_Param_PlayerController,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowFriendsUI) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowFriendsUI(Z_Param_PlayerController,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execShowAccountUpgradeUI); \
+	DECLARE_FUNCTION(execShowProfileUI); \
+	DECLARE_FUNCTION(execCloseWebURLUI); \
+	DECLARE_FUNCTION(execShowWebURLUI); \
+	DECLARE_FUNCTION(execShowLeaderBoardUI); \
+	DECLARE_FUNCTION(execShowInviteUI); \
+	DECLARE_FUNCTION(execShowFriendsUI);
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execShowAccountUpgradeUI) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerRequestingAccountUpgradeUI); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowAccountUpgradeUI(Z_Param_PlayerRequestingAccountUpgradeUI,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowProfileUI) \
-	{ \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerViewingProfile); \
-		P_GET_STRUCT(FBPUniqueNetId,Z_Param_PlayerToViewProfileOf); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowProfileUI(Z_Param_PlayerViewingProfile,Z_Param_PlayerToViewProfileOf,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execCloseWebURLUI) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::CloseWebURLUI(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowWebURLUI) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_URLToShow); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_GET_TARRAY_REF(FString,Z_Param_Out_AllowedDomains); \
-		P_GET_UBOOL(Z_Param_bEmbedded); \
-		P_GET_UBOOL(Z_Param_bShowBackground); \
-		P_GET_UBOOL(Z_Param_bShowCloseButton); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OffsetX); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_OffsetY); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_SizeX); \
-		P_GET_PROPERTY(UIntProperty,Z_Param_SizeY); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowWebURLUI(Z_Param_URLToShow,(EBlueprintResultSwitch&)(Z_Param_Out_Result),Z_Param_Out_AllowedDomains,Z_Param_bEmbedded,Z_Param_bShowBackground,Z_Param_bShowCloseButton,Z_Param_OffsetX,Z_Param_OffsetY,Z_Param_SizeX,Z_Param_SizeY); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowLeaderBoardUI) \
-	{ \
-		P_GET_PROPERTY(UStrProperty,Z_Param_LeaderboardName); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowLeaderBoardUI(Z_Param_LeaderboardName,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowInviteUI) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowInviteUI(Z_Param_PlayerController,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execShowFriendsUI) \
-	{ \
-		P_GET_OBJECT(APlayerController,Z_Param_PlayerController); \
-		P_GET_ENUM_REF(EBlueprintResultSwitch,Z_Param_Out_Result); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedExternalUILibrary::ShowFriendsUI(Z_Param_PlayerController,(EBlueprintResultSwitch&)(Z_Param_Out_Result)); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execShowAccountUpgradeUI); \
+	DECLARE_FUNCTION(execShowProfileUI); \
+	DECLARE_FUNCTION(execCloseWebURLUI); \
+	DECLARE_FUNCTION(execShowWebURLUI); \
+	DECLARE_FUNCTION(execShowLeaderBoardUI); \
+	DECLARE_FUNCTION(execShowInviteUI); \
+	DECLARE_FUNCTION(execShowFriendsUI);
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS_NO_PURE_DECLS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedExternalUILibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedExternalUILibrary_Statics; \
@@ -186,7 +48,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedExternalUILibrary)
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesUAdvancedExternalUILibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedExternalUILibrary_Statics; \
@@ -195,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedExternalUILibrary)
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_STANDARD_CONSTRUCTORS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedExternalUILibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAdvancedExternalUILibrary) \
@@ -208,7 +70,7 @@ private: \
 public:
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_ENHANCED_CONSTRUCTORS \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedExternalUILibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -221,28 +83,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAdvancedExternalUILibrary); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAdvancedExternalUILibrary)
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_26_PROLOG
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_GENERATED_BODY_LEGACY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_26_PROLOG
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_STANDARD_CONSTRUCTORS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS_NO_PURE_DECLS \
-	FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_ENHANCED_CONSTRUCTORS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_PRIVATE_PROPERTY_OFFSET \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_SPARSE_DATA \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_RPC_WRAPPERS_NO_PURE_DECLS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_INCLASS_NO_PURE_DECLS \
+	HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -250,7 +112,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ADVANCEDSESSIONS_API UClass* StaticClass<class UAdvancedExternalUILibrary>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FiveNightAtFreddys_Plugins_AdvancedSessions_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h
+#define CURRENT_FILE_ID HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedExternalUILibrary_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

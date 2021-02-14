@@ -3,11 +3,21 @@
 	
 	Plugin created by Rama
 */
-#include "GamepadUMGPlugin/Public/GameAnalogCursor.h"
+
+#pragma once
+#if USING_CODE_ANALYSIS
+MSVC_PRAGMA(warning(push))
+MSVC_PRAGMA(warning(disable : ALL_CODE_ANALYSIS_WARNINGS))
+#endif // USING_CODE_ANALYSIS
+#pragma warning(push)
+#pragma warning(disable:4996)
+
+#include "GameAnalogCursor.h"
 #include "GamepadUMGPluginPrivatePCH.h"
 #include "GamepadCursorSettings.h"
 #include "Blueprint/WidgetLayoutLibrary.h"
 #include "Engine/UserInterfaceSettings.h"
+//#include "Engine.h"
 
 bool IsWidgetInteractable(const TSharedPtr<SWidget> Widget)
 {

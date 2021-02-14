@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -13,35 +13,35 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ADVANCEDSESSIONS_BlueprintDataDefinitions_generated_h
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_310_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_321_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSessionsSearchSetting_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
 
 template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FSessionsSearchSetting>();
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_299_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_310_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSessionPropertyKeyPair_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
 
 template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FSessionPropertyKeyPair>();
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_263_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_274_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPFriendInfo_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
 
 template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FBPFriendInfo>();
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_238_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_249_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPFriendPresenceInfo_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
 
 template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FBPFriendPresenceInfo>();
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_227_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_238_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPOnlineRecentPlayer_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct(); \
 	typedef FBPOnlineUser Super;
@@ -49,7 +49,7 @@ template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FBPFriendPres
 
 template<> ADVANCEDSESSIONS_API UScriptStruct* StaticStruct<struct FBPOnlineRecentPlayer>();
 
-#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_213_GENERATED_BODY \
+#define HostProject_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_224_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPOnlineUser_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 

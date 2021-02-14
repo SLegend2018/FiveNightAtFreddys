@@ -1,4 +1,4 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Copyright Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
@@ -31,44 +31,14 @@ template<> ADVANCEDSTEAMSESSIONS_API UScriptStruct* StaticStruct<struct FBPSteam
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamWorkshopLibrary_h_339_SPARSE_DATA
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamWorkshopLibrary_h_339_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execGetNumSubscribedWorkshopItems) \
-	{ \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumberOfItems); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamWorkshopLibrary::GetNumSubscribedWorkshopItems(Z_Param_Out_NumberOfItems); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSubscribedWorkshopItems) \
-	{ \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumberOfItems); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FBPSteamWorkshopID>*)Z_Param__Result=UAdvancedSteamWorkshopLibrary::GetSubscribedWorkshopItems(Z_Param_Out_NumberOfItems); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetNumSubscribedWorkshopItems); \
+	DECLARE_FUNCTION(execGetSubscribedWorkshopItems);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamWorkshopLibrary_h_339_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execGetNumSubscribedWorkshopItems) \
-	{ \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumberOfItems); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		UAdvancedSteamWorkshopLibrary::GetNumSubscribedWorkshopItems(Z_Param_Out_NumberOfItems); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execGetSubscribedWorkshopItems) \
-	{ \
-		P_GET_PROPERTY_REF(UIntProperty,Z_Param_Out_NumberOfItems); \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		*(TArray<FBPSteamWorkshopID>*)Z_Param__Result=UAdvancedSteamWorkshopLibrary::GetSubscribedWorkshopItems(Z_Param_Out_NumberOfItems); \
-		P_NATIVE_END; \
-	}
+	DECLARE_FUNCTION(execGetNumSubscribedWorkshopItems); \
+	DECLARE_FUNCTION(execGetSubscribedWorkshopItems);
 
 
 #define HostProject_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamWorkshopLibrary_h_339_INCLASS_NO_PURE_DECLS \
