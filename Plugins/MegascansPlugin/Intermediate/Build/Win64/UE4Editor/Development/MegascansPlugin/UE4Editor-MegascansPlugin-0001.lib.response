@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-MegascansPlugin-0001.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\Intermediate\Build\Win64\DOOMEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.obj"
+"S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\Plugins\MegascansPlugin\Intermediate\Build\Win64\UE4Editor\Development\MegascansPlugin\Module.MegascansPlugin.cpp.obj"
+"S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\Plugins\MegascansPlugin\Intermediate\Build\Win64\UE4Editor\Development\MegascansPlugin\Module.MegascansPlugin.gen.cpp.obj"
+"S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\Plugins\MegascansPlugin\Intermediate\Build\Win64\UE4Editor\Development\MegascansPlugin\Default.rc2.res"
+/OUT:"S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\Plugins\MegascansPlugin\Intermediate\Build\Win64\UE4Editor\Development\MegascansPlugin\UE4Editor-MegascansPlugin-0001.lib"
+/INCLUDE:IMPLEMENT_MODULE_MegascansPlugin
