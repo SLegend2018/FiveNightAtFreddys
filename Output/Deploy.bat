@@ -1,0 +1,1 @@
+windeployqt --qmldir "S:\natha\Documents\Unreal Project\FNAF\FiveNightAtFreddys\DOOM" .\release
