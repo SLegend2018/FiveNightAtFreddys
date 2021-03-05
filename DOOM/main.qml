@@ -64,6 +64,7 @@ Window {
             ComboBox {
                 id: comboBox_API
                 height: 40
+                wheelEnabled: true
                 property int property0: 0
                 font.family: "Burbank Big Condensed"
                 Layout.maximumHeight: 32
@@ -74,7 +75,20 @@ Window {
                 onCurrentIndexChanged: {
                     gameInitialize.setArgsByIndex(currentIndex)
                 }
+
+                MouseArea {
+                    id: mouseArea_Combobox
+                    anchors.fill: parent
+                    scrollGestureEnabled: false
+                    preventStealing: false
+                    acceptedButtons: Qt.RightButton
+                    hoverEnabled: false
+                    cursorShape: Qt.PointingHandCursor
+                    propagateComposedEvents: false
+                }
             }
+
+
         }
 
         Button {
@@ -87,6 +101,19 @@ Window {
             onClicked: {
                 gameInitialize.launchGame()
             }
+
+            MouseArea {
+                id: mouseArea_Btn
+                x: 11
+                y: -53
+                anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
+                preventStealing: false
+                scrollGestureEnabled: false
+                hoverEnabled: false
+                propagateComposedEvents: false
+                acceptedButtons: Qt.RightButton
+            }
         }
     }
 
@@ -95,6 +122,6 @@ Window {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:3}
+    D{i:0;formeditorZoom:3}D{i:7}D{i:9}
 }
 ##^##*/

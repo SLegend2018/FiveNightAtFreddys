@@ -19,7 +19,7 @@ CXXFLAGS      = -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStri
 INCPATH       = -I..\DOOM -I. -I..\..\..\..\QT\5.15.2\msvc2019_64\include -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtQuickControls2 -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtQuick -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtGui -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtANGLE -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtQmlModels -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtQml -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtNetwork -I..\..\..\..\QT\5.15.2\msvc2019_64\include\QtCore -Irelease -I/include -I..\..\..\..\QT\5.15.2\msvc2019_64\mkspecs\win32-msvc 
 LINKER        = link
 LFLAGS        = /NOLOGO /DYNAMICBASE /NXCOMPAT /OPT:REF /INCREMENTAL:NO /SUBSYSTEM:WINDOWS "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'"
-LIBS          = S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QuickControls2.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Quick.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QmlModels.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Qml.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Network.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib  S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\qtmain.lib /LIBPATH:C:\openssl\lib /LIBPATH:C:\Utils\my_sql\mysql-5.7.25-winx64\lib /LIBPATH:C:\Utils\postgresql\pgsql\lib shell32.lib 
+LIBS          = S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QuickControls2.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Quick.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QmlModels.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Qml.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Network.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib release\DOOM_resource.res  S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\qtmain.lib /LIBPATH:C:\openssl\lib /LIBPATH:C:\Utils\my_sql\mysql-5.7.25-winx64\lib /LIBPATH:C:\Utils\postgresql\pgsql\lib shell32.lib 
 QMAKE         = S:\natha\Documents\QT\5.15.2\msvc2019_64\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -40,7 +40,7 @@ IDC           = idc
 IDL           = midl
 ZIP           = zip -r -9
 DEF_FILE      = 
-RES_FILE      = 
+RES_FILE      = release\DOOM_resource.res
 SED           = $(QMAKE) -install sed
 MOVE          = move
 
@@ -138,11 +138,14 @@ DESTDIR_TARGET = release\DOOM.exe
 first: all
 all: Makefile.Release  release\DOOM.exe
 
-release\DOOM.exe: S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QuickControls2.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Quick.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QmlModels.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Qml.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Network.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\qtmain.lib $(OBJECTS) 
+release\DOOM.exe: S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QuickControls2.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Quick.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5QmlModels.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Qml.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Network.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib S:\natha\Documents\QT\5.15.2\msvc2019_64\lib\qtmain.lib $(OBJECTS) release\DOOM_resource.res
 	$(LINKER) $(LFLAGS) /MANIFEST:embed /OUT:$(DESTDIR_TARGET) @<<
 release\gameinitialize.obj release\main.obj release\main_qml.obj release\qmlcache_loader.obj release\qrc_qml_qmlcache.obj release\moc_gameinitialize.obj
 $(LIBS)
 <<
+
+release\DOOM_resource.res: DOOM_resource.rc
+	rc /NOLOGO $(DEFINES) -fo release\DOOM_resource.res DOOM_resource.rc
 
 qmake: FORCE
 	@$(QMAKE) -o Makefile.Release ..\DOOM\DOOM.pro -spec win32-msvc "CONFIG+=qtquickcompiler"
@@ -154,6 +157,7 @@ dist:
 
 clean: compiler_clean 
 	-$(DEL_FILE) release\gameinitialize.obj release\main.obj release\main_qml.obj release\qmlcache_loader.obj release\qrc_qml_qmlcache.obj release\moc_gameinitialize.obj
+	-$(DEL_FILE) release\DOOM_resource.res
 
 distclean: clean 
 	-$(DEL_FILE) .qmake.stash

@@ -28,3 +28,5 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+DOOM.sln
+.vs/DOOM/v15/.suo
