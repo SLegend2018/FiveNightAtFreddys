@@ -2,7 +2,7 @@
 
 GameInitialize::GameInitialize(QObject *parent) : QObject(parent)
 {
-    URelativeDir = UPath.relativeFilePath(UPath.absolutePath()+"/WindowNoEditor/DOOM.exe");
+    URelativeDir = UPath.relativeFilePath(UPath.absolutePath()+"/WindowsNoEditor/DOOM.exe");
 }
 
 //Q_PROPERTY VOID
